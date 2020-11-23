@@ -1,31 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:8.x" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19955833-4525-4fc3-b5d7-a949a68c8789" name="Default Changelist" comment="" />
+    <list default="true" id="19955833-4525-4fc3-b5d7-a949a68c8789" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <list id="987f42ac-88d3-473d-a91f-ea5c03aec168" name="initial commit" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/LawAdvisor-Exam.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
@@ -36,7 +32,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TodoController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/Http/Requests/AddTodoRequest.php" afterDir="false" />
@@ -204,7 +199,7 @@
       <updated>1606142440775</updated>
       <workItem from="1606142441922" duration="101000" />
       <workItem from="1606142553810" duration="121000" />
-      <workItem from="1606142704602" duration="6285000" />
+      <workItem from="1606142704602" duration="6534000" />
     </task>
     <servers />
   </component>
@@ -222,7 +217,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="8.x" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -263,9 +258,9 @@
       <screen x="0" y="27" width="1920" height="977" />
     </state>
     <state x="991" y="363" width="618" height="522" key="find.popup/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606146022361" />
-    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1606147301676">
+    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1606149244853">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606147301676" />
+    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606149244853" />
   </component>
 </project>
