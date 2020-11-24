@@ -14,14 +14,13 @@ class Todo extends Model
      *
      * @var string
      */
-    protected $table = 'todo';
+    protected $table = 'todos';
 
     /**
-     * The model's default values for attributes.
+     * The attributes that are fillable.
      *
      * @var array
      */
-    protected $attributes = [
-        'delayed' => false,
-    ];
+    protected $fillable = ['title', 'description', 'rank'];
+
 }

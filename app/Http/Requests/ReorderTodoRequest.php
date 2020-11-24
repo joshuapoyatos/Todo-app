@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AddTodoRequest extends FormRequest
+class ReorderTodoRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,9 +24,8 @@ class AddTodoRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:todos',
-            'description' => 'required',
-            'rank' => 'required|int',
+            '*.id' => 'required|int',
+            '*.rank' => 'required|int',
         ];
     }
 }

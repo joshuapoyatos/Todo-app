@@ -41,6 +41,16 @@ $app->singleton(
     App\Exceptions\Handler::class
 );
 
+$app->singleton(
+    \App\Services\Todo\TodoServiceInterface::class,
+    \App\Services\Todo\TodoService::class
+);
+
+$app->singleton(
+    \App\Repository\Todo\TodoRepositoryInterface::class,
+    \App\Repository\Todo\TodoRepository::class
+);
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application

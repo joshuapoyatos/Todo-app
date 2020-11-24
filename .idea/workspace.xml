@@ -20,33 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19955833-4525-4fc3-b5d7-a949a68c8789" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
-    <list id="987f42ac-88d3-473d-a91f-ea5c03aec168" name="initial commit" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LawAdvisor-Exam.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/63de6b9d-332c-4b28-912c-1104a52388c4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/63de6b9d-332c-4b28-912c-1104a52388c4/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TodoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AddTodoRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/Todo/TodoService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Services/Todo/TodoServiceInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/Todo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/TodoFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_23_151028_create_todos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeders/TodoSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysql/my.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nginx/conf.d/app.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/local.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/Todo/TodoRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repository/Todo/TodoRepositoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Services/Todo/TodoService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TodoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TodoController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/AddTodoRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/AddTodoRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/Todo/TodoService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Services/Todo/TodoServiceInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Todo/TodoServiceInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Todo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Todo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +46,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php:latest">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
@@ -179,12 +164,29 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Repository/Repository" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Repository/Repository" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Repository" />
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
   </component>
@@ -192,7 +194,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="19955833-4525-4fc3-b5d7-a949a68c8789" name="Default Changelist" comment="" />
-      <changelist id="987f42ac-88d3-473d-a91f-ea5c03aec168" name="initial commit" comment="" />
+      <changelist id="" name="initial commit" comment="" />
       <created>1606142440775</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -200,6 +202,7 @@
       <workItem from="1606142441922" duration="101000" />
       <workItem from="1606142553810" duration="121000" />
       <workItem from="1606142704602" duration="6534000" />
+      <workItem from="1606208122721" duration="13834000" />
     </task>
     <servers />
   </component>
@@ -228,12 +231,45 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2475" y="177" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606143605169">
+    <state x="2463" y="173" width="824" height="682" key="#CLI_Interpreters" timestamp="1606232130944">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="177" width="800" height="675" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606143605169" />
+    <state x="2463" y="173" width="824" height="682" key="#CLI_Interpreters/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606232130944" />
+    <state x="2475" y="177" width="958" height="719" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606208280847">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2475" y="177" width="958" height="719" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606208280847" />
+    <state x="2669" y="196" width="412" height="630" key="#com.intellij.ide.util.MemberChooser" timestamp="1606237495153">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2669" y="196" width="412" height="630" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606237495153" />
+    <state x="2583" y="27" width="574" height="977" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606235273791">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2583" y="27" width="574" height="977" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606235273791" />
+    <state x="2613" y="273" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606229273784">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2613" y="273" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606229273784" />
+    <state width="1291" height="270" key="GridCell.Tab.0.bottom" timestamp="1606239130115">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1291" height="270" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606239130115" />
+    <state width="1291" height="270" key="GridCell.Tab.0.center" timestamp="1606239130115">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1291" height="270" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606239130115" />
+    <state width="1291" height="270" key="GridCell.Tab.0.left" timestamp="1606239130115">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1291" height="270" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606239130115" />
+    <state width="1291" height="270" key="GridCell.Tab.0.right" timestamp="1606239130115">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1291" height="270" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606239130115" />
     <state width="263" height="500" key="HiddenNamespacesPopup" timestamp="1606143621286">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -242,6 +278,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2478" y="235" width="793" height="553" key="NewPhpClassDialog/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606147606108" />
+    <state x="2369" y="150" key="SettingsEditor" timestamp="1606232136107">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2369" y="150" key="SettingsEditor/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606232136107" />
     <state width="498" height="398" key="SwitcherDM" timestamp="1606142611627">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -254,13 +294,13 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2661" y="430" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606142629463" />
-    <state x="991" y="363" width="618" height="522" key="find.popup" timestamp="1606146022361">
-      <screen x="0" y="27" width="1920" height="977" />
-    </state>
-    <state x="991" y="363" width="618" height="522" key="find.popup/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606146022361" />
-    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1606149244853">
+    <state x="2675" y="246" width="618" height="522" key="find.popup" timestamp="1606238293946">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606149244853" />
+    <state x="2675" y="246" width="618" height="522" key="find.popup/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606238293946" />
+    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup" timestamp="1606239443434">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="240" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.977@1920.0.1920.1080" timestamp="1606239443434" />
   </component>
 </project>
