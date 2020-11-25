@@ -75,7 +75,9 @@ class TodoController extends Controller
      */
     public function delete(int $id)
     {
-        return $this->buildJsonResponse($this->todoService->delete($id));
+        $this->todoService->delete($id);
+
+        return new Response(null, 204);
     }
 
     /**

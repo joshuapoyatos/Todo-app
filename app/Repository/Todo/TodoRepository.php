@@ -43,8 +43,10 @@ class TodoRepository implements TodoRepositoryInterface
             $model = Todo::query();
 
             if ($findTodoRequest->input('title')) {
-                $model->where('title', 'LIKE', `%{$findTodoRequest->input('title')}%`);
+                $model->where('title', 'like', '%'.$findTodoRequest->input('title').'%');
             }
+
+            $model->orderBy('rank', 'asc');
 
             return $model->get();
         } catch (QueryException $exception) {
