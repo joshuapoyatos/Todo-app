@@ -23,40 +23,40 @@ class TodoController extends Controller
     }
 
     /**
-     * Retrieves an item.
+     * Retrieves a task.
      *
      * @param int $id
      * @return Response
      */
     public function get(int $id)
     {
-        return new Response($this->todoService->get($id));
+        return $this->buildJsonResponse($this->todoService->get($id));
     }
 
     /**
-     * Retrieves a list of items.
+     * Retrieves a list of tasks.
      *
      * @param FindTodoRequest $findTodoRequest
      * @return Response
      */
     public function find(FindTodoRequest $findTodoRequest)
     {
-        return new Response($this->todoService->find($findTodoRequest));
+        return $this->buildJsonResponse($this->todoService->find($findTodoRequest));
     }
 
     /**
-     * Store a new item.
+     * Store a new task.
      *
      * @param AddTodoRequest $addTodoRequest
      * @return Response
      */
     public function add(AddTodoRequest $addTodoRequest)
     {
-        return new Response($this->todoService->add(($addTodoRequest)));
+        return $this->buildJsonResponse($this->todoService->add(($addTodoRequest)));
     }
 
     /**
-     * Updates an item.
+     * Updates a task.
      *
      * @param int $id
      * @param UpdateTodoRequest $updateTodoRequest
@@ -64,28 +64,28 @@ class TodoController extends Controller
      */
     public function update(int $id, UpdateTodoRequest $updateTodoRequest)
     {
-        return new Response($this->todoService->update($id, $updateTodoRequest));
+        return $this->buildJsonResponse($this->todoService->update($id, $updateTodoRequest));
     }
 
     /**
-     * Deletes an item.
+     * Deletes a task.
      *
      * @param int $id
      * @return Response
      */
     public function delete(int $id)
     {
-        return new Response($this->todoService->delete($id));
+        return $this->buildJsonResponse($this->todoService->delete($id));
     }
 
     /**
-     * Reorder items.
+     * Reorder tasks.
      *
      * @param  ReorderTodoRequest  $reorderTodoRequest
      * @return Response
      */
     public function reorder(ReorderTodoRequest $reorderTodoRequest)
     {
-        return new Response($this->todoService->reorder($reorderTodoRequest));
+        return $this->buildJsonResponse($this->todoService->reorder($reorderTodoRequest));
     }
 }

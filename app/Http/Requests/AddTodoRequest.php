@@ -24,9 +24,9 @@ class AddTodoRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|unique:todos',
+            'title' => 'required',
             'description' => 'required',
-            'rank' => 'required|int',
+            'rank' => 'required|int|unique:todos',
         ];
     }
 }
