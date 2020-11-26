@@ -12,24 +12,32 @@ use App\Http\Requests\UpdateTodoRequest;
 interface TodoServiceInterface
 {
     /**
+     * Retrieve a single task.
+     *
      * @param int $id
      * @return mixed
      */
     public function get(int $id);
 
     /**
+     * Retrieve list of tasks
+     *
      * @param FindTodoRequest $findTodoRequest
      * @return mixed
      */
     public function find(FindTodoRequest $findTodoRequest);
 
     /**
+     * Add a new task
+     *
      * @param AddTodoRequest $addTodoRequest
      * @return mixed
      */
     public function add(AddTodoRequest $addTodoRequest);
 
     /**
+     * Updates an existing task
+     *
      * @param int $id
      * @param UpdateTodoRequest $updateTodoRequest
      * @return mixed
@@ -37,6 +45,8 @@ interface TodoServiceInterface
     public function update(int $id, UpdateTodoRequest $updateTodoRequest);
 
     /**
+     * Deletes an existing task.
+     *
      * @param int $id
      * @return mixed
      */

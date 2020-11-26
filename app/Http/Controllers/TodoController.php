@@ -7,7 +7,6 @@ use App\Http\Requests\FindTodoRequest;
 use App\Http\Requests\ReorderTodoRequest;
 use App\Http\Requests\UpdateTodoRequest;
 use App\Services\Todo\TodoServiceInterface;
-use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 class TodoController extends Controller

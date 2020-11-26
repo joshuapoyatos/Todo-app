@@ -31,7 +31,12 @@ class TodoService implements TodoServiceInterface
     public function get(int $id)
     {
         try {
-            return $this->todoRepository->get($id);
+            $todo =  $this->todoRepository->get($id);
+
+            if (!$todo) {
+                throw new NotFoundException(sprintf('Todo task does not exist. [%s]', $id));
+            }
+            return $todo;
         } catch (BaseApplicationException $baseApplicationException) {
             report($baseApplicationException);
 
@@ -97,7 +102,7 @@ class TodoService implements TodoServiceInterface
             $todo = $this->todoRepository->get($id);
 
             if (!$todo) {
-                throw new NotFoundException(sprintf("Todo task does not exist. [%s]", $id));
+                throw new NotFoundException(sprintf('Todo task does not exist. [%s]', $id));
             }
 
             $todo->fill($updateTodoRequest->input());
@@ -124,7 +129,7 @@ class TodoService implements TodoServiceInterface
             $todo = $this->todoRepository->get($id);
 
             if (!$todo) {
-                throw new NotFoundException(sprintf("Todo task does not exist. [%s]", $id));
+                throw new NotFoundException(sprintf('Todo task does not exist. [%s]', $id));
             }
 
             return $this->todoRepository->delete($id);
@@ -152,12 +157,13 @@ class TodoService implements TodoServiceInterface
                 $todo = $this->todoRepository->get($todoRequest['id']);
 
                 if (!$todo) {
-                    throw new NotFoundException(sprintf("Todo task does not exist. [%s]", $todoRequest['id']));
+                    throw new NotFoundException(sprintf('Todo task does not exist. [%s]', $todoRequest['id']));
                 }
 
+                // Update the rank of the tasks
                 $todo['rank'] = $todoRequest['rank'];
-
                 $todo = $this->todoRepository->update($todo);
+
                 $todoList[] = $todo;
             }
 
